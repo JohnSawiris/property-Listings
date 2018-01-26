@@ -19,6 +19,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListingsComponent } from './components/listings/listings.component';
 import { AddListingComponent } from './components/add-listing/add-listing.component';
+import { RemoveListingComponent } from './components/remove-listing/remove-listing.component';
 
 //Configure firebase
 export const firebaseConfig = {
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     NavbarComponent,
     HomeComponent,
     ListingsComponent,
-    AddListingComponent
+    AddListingComponent,
+    RemoveListingComponent
   ],
   imports: [
     BrowserModule,

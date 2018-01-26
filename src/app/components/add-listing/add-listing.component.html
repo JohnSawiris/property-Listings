@@ -1,6 +1,7 @@
-<button (click)="toggleDisplay()" type="button" name="button" class="btn btn-primary mb-3">Add Listing</button>
+<button (click)="toggleDisplay  ()" type="button" name="button" class="btn btn-primary mb-3">Add Listing</button>
 
-<div class="form-wrap mb-4" *ngIf="toggle">
+<div class="form-wrap mb-4 text-dark" *ngIf="toggle">
+  <h2 class="text-center mb-4">Add a New Property</h2>
   <form class="center">
     <div class="from-group row">
       <label for="Owner" class="col-sm-3 font-weight-bold">Owner Name : </label>
@@ -54,7 +55,7 @@
     title.value = '';
     type.value = '';
     ">Add to Listing</button>
-    <button type="button" class="btn btn-danger ml-2" name="Close">Cancel</button>
+    <button type="button" class="btn btn-danger ml-2" name="Close" (click)="toggleDisplay()">Cancel</button>
   </form>
 
 </div>

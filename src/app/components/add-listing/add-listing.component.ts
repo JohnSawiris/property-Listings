@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, trigger, state, animate, transition, style } from '@angular/core';
 
 import { PropertyService } from '../../property.service';
 import { Property } from '../../property.model';
@@ -11,7 +11,7 @@ import { Property } from '../../property.model';
 })
 export class AddListingComponent implements OnInit {
 
-  toggle: boolean = true;
+  toggle: boolean = false;
 
   constructor(private propertyService: PropertyService) { }
 
@@ -26,6 +26,7 @@ export class AddListingComponent implements OnInit {
     const newProperty: Property = new Property(owner, title, bedrooms, city, price, type);
     console.log(newProperty)
     this.propertyService.addProperty(newProperty);
+    this.toggleDisplay();
   }
 
 }

@@ -15,7 +15,6 @@ export class RemoveListingComponent implements OnInit {
   constructor(private propertyService: PropertyService) { }
 
   ngOnInit() {
-    console.log(this.propertyKey.$key);
   }
 
   removeListing(this.propertyKey) {

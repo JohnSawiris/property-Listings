@@ -19,4 +19,9 @@ export class PropertyService {
   addProperty(newProperty: Property) {
     this.properties.push(newProperty);
   }
+
+  removeListing(propertyId) {
+    this.database.object(`/properties/${propertyId}`).remove();
+  }
+
 }

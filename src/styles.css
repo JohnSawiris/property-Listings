@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  position: relative;
+}
+.center {
+  width: 75%;
+  margin: auto;
+}
+
+.form-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 100000;
+  background: rgba(255,255,255,0.9);
+  width: 70%;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 2rem 4rem;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.btn {
+  box-shadow: 0 0 8px #aaa;
+}
