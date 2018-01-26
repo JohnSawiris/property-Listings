@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
+import { Property } from './property.model';
+
 @Injectable()
 export class PropertyService {
 
@@ -12,5 +14,9 @@ export class PropertyService {
 
   getProperties() {
     return this.properties;
+  }
+
+  addProperty(newProperty: Property) {
+    this.properties.push(newProperty);
   }
 }

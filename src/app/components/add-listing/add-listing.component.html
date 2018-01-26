@@ -5,40 +5,55 @@
     <div class="from-group row">
       <label for="Owner" class="col-sm-3 font-weight-bold">Owner Name : </label>
       <div class="col-sm-9 mb-3">
-        <input type="text" class="form-control" name="Owner">
+        <input type="text" class="form-control" name="Owner" #owner>
       </div>
     </div>
     <div class="from-group row">
       <label for="City" class="col-sm-3 font-weight-bold">City : </label>
       <div class="col-sm-9 mb-3">
-        <input type="text" class="form-control" name="City">
+        <input type="text" class="form-control" name="City" #city>
       </div>
     </div>
     <div class="from-group row">
       <label for="Price" class="col-sm-3 font-weight-bold">Price : </label>
       <div class="col-sm-9 mb-3">
-        <input type="text" class="form-control" name="Price">
+        <input type="text" class="form-control" name="Price" #price>
       </div>
     </div>
     <div class="from-group row">
       <label for="Bedrooms" class="col-sm-3 font-weight-bold">Bedrooms : </label>
       <div class="col-sm-9 mb-3">
-        <input type="text" class="form-control" name="Bedrooms">
+        <input type="text" class="form-control" name="Bedrooms" #bedrooms>
       </div>
     </div>
     <div class="from-group row">
       <label for="Title" class="col-sm-3 font-weight-bold">Title : </label>
       <div class="col-sm-9 mb-3">
-        <input type="text" class="form-control" name="Title">
+        <input type="text" class="form-control" name="Title" #title>
       </div>
     </div>
     <div class="from-group row">
       <label for="Type" class="col-sm-3 font-weight-bold">Type : </label>
       <div class="col-sm-9 mb-3">
-        <input type="text" class="form-control" name="Type">
+        <input type="text" class="form-control" name="Type" #type>
       </div>
     </div>
-    <button type="button" class="btn btn-info" name="Add a Property">Add to Listing</button>
+    <button  class="btn btn-info" name="Add a Property"
+    (click)="addListing(
+      owner.value,
+      city.value,
+      price.value,
+      bedrooms.value,
+      title.value,
+      type.value
+    );
+    owner.value = '';
+    city.value = '';
+    price.value = '';
+    bedrooms.value = '';
+    title.value = '';
+    type.value = '';
+    ">Add to Listing</button>
     <button type="button" class="btn btn-danger ml-2" name="Close">Cancel</button>
   </form>
 

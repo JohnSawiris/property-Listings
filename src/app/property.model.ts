@@ -1,10 +1,10 @@
 export class Property {
   constructor(
-    owner: string,
-    title: string,
-    bedrooms: number,
-    city: string,
-    price: string,
-    type: string
+    public owner: string,
+    public title: string,
+    public bedrooms: number,
+    public city: string,
+    public price: string,
+    public type: string
   ) { }
 }

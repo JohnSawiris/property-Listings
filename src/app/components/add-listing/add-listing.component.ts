@@ -22,4 +22,10 @@ export class AddListingComponent implements OnInit {
     this.toggle = !this.toggle;
   }
 
+  addListing(owner: string, title: string, bedrooms: number, city: string, price: string, type: string) {
+    const newProperty: Property = new Property(owner, title, bedrooms, city, price, type);
+    console.log(newProperty)
+    this.propertyService.addProperty(newProperty);
+  }
+
 }

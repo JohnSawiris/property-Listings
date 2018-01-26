@@ -1,7 +1,7 @@
 <h2>Listings: </h2>
 <app-add-listing></app-add-listing>
 <div class="row">
-  <div class="col-lg-4"  *ngFor="let property of properties | async">
+  <div class="col-lg-4 mb-2"  *ngFor="let property of properties | async">
     <div class="card">
       <h4 class="card-header">Owner: {{property.owner}}</h4>
       <div class="card-body bg-light">
