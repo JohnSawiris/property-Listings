@@ -1,16 +1,46 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
+//firebase modules
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+//import routing
+import { routing } from './app.routing';
+
+//import API key
+import { firebaseApiKey } from './api-key';
+
+// import components
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { ListingsComponent } from './components/listings/listings.component';
 
+//Configure firebase
+export const firebaseConfig = {
+  apiKey: firebaseApiKey.apiKey,
+  authDomain: firebaseApiKey.authDomain,
+  databaseURL: firebaseApiKey.databaseURL,
+  storageBucket: firebaseApiKey.storageBucket
+}
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    ListingsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
