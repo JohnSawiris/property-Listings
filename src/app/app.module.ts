@@ -20,6 +20,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ListingsComponent } from './components/listings/listings.component';
 import { AddListingComponent } from './components/add-listing/add-listing.component';
 import { RemoveListingComponent } from './components/remove-listing/remove-listing.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { PropertyDetailComponent } from './components/property-detail/property-detail.component';
 
 //Configure firebase
 export const firebaseConfig = {
@@ -36,7 +38,9 @@ export const firebaseConfig = {
     HomeComponent,
     ListingsComponent,
     AddListingComponent,
-    RemoveListingComponent
+    RemoveListingComponent,
+    AdminComponent,
+    PropertyDetailComponent
   ],
   imports: [
     BrowserModule,

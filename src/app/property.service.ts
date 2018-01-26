@@ -20,6 +20,10 @@ export class PropertyService {
     this.properties.push(newProperty);
   }
 
+  getPropertyByKey(propertyId: string) {
+    return this.database.object('properties/' + propertyId);
+  }
+
   removeListing(propertyId) {
     this.database.object(`/properties/${propertyId}`).remove();
   }

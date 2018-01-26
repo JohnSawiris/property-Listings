@@ -9,7 +9,10 @@
         <p class="card-text">City: {{property.city}}</p>
         <p class="card-text">Title: {{property.title}}</p>
         <p class="card-text">Type: {{property.type}}</p>
-        <app-remove-listing [propertyKey]="property"></app-remove-listing>
+        
+        <app-remove-listing [propertyKey]="property" *ngIf="currentRoute === '/admin'"></app-remove-listing>
+
+        <button type="button" class="btn btn-success" name="button" (click)="checkItOut(property)">Check it Out</button>
       </div>
     </div>
   </div>
