@@ -1,0 +1,45 @@
+<button (click)="toggleDisplay()" type="button" name="button" class="btn btn-primary mb-3">Add Listing</button>
+
+<div class="form-wrap mb-4" *ngIf="toggle">
+  <form class="center">
+    <div class="from-group row">
+      <label for="Owner" class="col-sm-3 font-weight-bold">Owner Name : </label>
+      <div class="col-sm-9 mb-3">
+        <input type="text" class="form-control" name="Owner">
+      </div>
+    </div>
+    <div class="from-group row">
+      <label for="City" class="col-sm-3 font-weight-bold">City : </label>
+      <div class="col-sm-9 mb-3">
+        <input type="text" class="form-control" name="City">
+      </div>
+    </div>
+    <div class="from-group row">
+      <label for="Price" class="col-sm-3 font-weight-bold">Price : </label>
+      <div class="col-sm-9 mb-3">
+        <input type="text" class="form-control" name="Price">
+      </div>
+    </div>
+    <div class="from-group row">
+      <label for="Bedrooms" class="col-sm-3 font-weight-bold">Bedrooms : </label>
+      <div class="col-sm-9 mb-3">
+        <input type="text" class="form-control" name="Bedrooms">
+      </div>
+    </div>
+    <div class="from-group row">
+      <label for="Title" class="col-sm-3 font-weight-bold">Title : </label>
+      <div class="col-sm-9 mb-3">
+        <input type="text" class="form-control" name="Title">
+      </div>
+    </div>
+    <div class="from-group row">
+      <label for="Type" class="col-sm-3 font-weight-bold">Type : </label>
+      <div class="col-sm-9 mb-3">
+        <input type="text" class="form-control" name="Type">
+      </div>
+    </div>
+    <button type="button" class="btn btn-info" name="Add a Property">Add to Listing</button>
+    <button type="button" class="btn btn-danger ml-2" name="Close">Cancel</button>
+  </form>
+
+</div>
