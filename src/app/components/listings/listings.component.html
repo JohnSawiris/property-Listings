@@ -1,3 +1,15 @@
-<p>
-  listings works!
-</p>
+<h2>Listings: </h2>
+<div class="row">
+  <div class="col-lg-4"  *ngFor="let property of properties | async">
+    <div class="card">
+      <h4 class="card-header">Owner: {{property.owner}}</h4>
+      <div class="card-body bg-light">
+
+        <p class="card-text">Bedrooms: {{property.bedrooms}}</p>
+        <p class="card-text">City: {{property.city}}</p>
+        <p class="card-text">Title: {{property.title}}</p>
+        <p class="card-text">Type: {{property.type}}</p>
+      </div>
+    </div>
+  </div>
+</div>

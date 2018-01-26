@@ -3,7 +3,7 @@
     "0" : {
       "bedrooms" : 15,
       "city" : "San Francisco",
-      "owner" : "Bruce Springstien",
+      "owner" : "Bruce",
       "price" : "10m",
       "title" : "15 Bedroom Mansion",
       "type" : "Estate"
@@ -11,7 +11,7 @@
     "1" : {
       "bedrooms" : 12,
       "city" : "Miami",
-      "owner" : "Taylor Swift",
+      "owner" : "Taylor",
       "price" : "10.5m",
       "title" : "Pool Mansion",
       "type" : "Estate"
@@ -19,7 +19,7 @@
     "2" : {
       "bedrooms" : 10,
       "city" : "Newark",
-      "owner" : "Tony Soprano",
+      "owner" : "Tony",
       "price" : "5.7m",
       "title" : "10 Bedroom Dreamhouse",
       "type" : "Estate"
