@@ -17,8 +17,8 @@ export class RemoveListingComponent implements OnInit {
   ngOnInit() {
   }
 
-  removeListing(this.propertyKey) {
-    this.propertyService.removeListing(this.propertyKey.$key);
+  removeListing(property) {
+    this.propertyService.removeListing(property.$key);
   }
 
 }
