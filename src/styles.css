@@ -21,6 +21,10 @@ body {
   box-shadow: 0 0 5px #ccc;
 }
 
+a {
+  cursor: pointer;
+}
+
 .btn {
   box-shadow: 0 0 8px #aaa;
 }
